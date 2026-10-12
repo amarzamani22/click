@@ -1,46 +1,1122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#08050b">
-<title>Happy Birthday, My Love ❤️</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7f6f2">
+<meta name="description" content="The world's most unnecessarily dramatic PDF compressor.">
+<title>SquishPDF — Compress Your Problems</title>
+
 <style>
-:root{--bg:#08050b;--text:#fff7fb;--muted:#cbbac5;--pink:#ff4f91;--pink2:#ff8fbb;--purple:#a66cff;--glass:rgba(255,255,255,.07);--line:rgba(255,255,255,.13)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:radial-gradient(circle at 20% 10%,rgba(255,79,145,.13),transparent 28%),radial-gradient(circle at 80% 30%,rgba(166,108,255,.11),transparent 28%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}body.locked{overflow:hidden}button{font:inherit}
-#stars{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.noise{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}.page{position:relative;z-index:2}
-#intro{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at center,rgba(255,79,145,.12),transparent 35%),#08050b;transition:opacity 1s,visibility 1s}.intro-inner{padding:30px}.mini,.section-label,.surprise-small{color:var(--pink2);text-transform:uppercase;letter-spacing:4px;font-size:11px}.mini{margin-bottom:20px}.intro-heart{width:100px;height:100px;margin:0 auto 28px;display:grid;place-items:center;font-size:54px;border-radius:50%;background:rgba(255,79,145,.08);border:1px solid rgba(255,143,187,.2);box-shadow:0 0 60px rgba(255,79,145,.22);animation:pulse 1.8s infinite}.intro-title,.section-title,.final-title,.surprise-heading{font-family:"Cormorant Garamond",serif}.intro-title{font-size:clamp(46px,10vw,90px);line-height:.9;margin-bottom:18px}.gradient-text{background:linear-gradient(90deg,#fff,var(--pink2),#fff,var(--purple));background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradient 6s ease infinite}.intro-sub,.hero p,.final p{color:var(--muted);line-height:1.8}.intro-sub{max-width:480px;margin:0 auto 30px}.enter-btn,.surprise-btn{border:0;cursor:pointer;color:white;padding:15px 27px;border-radius:999px;background:linear-gradient(135deg,var(--pink),#c735ff);box-shadow:0 12px 40px rgba(255,79,145,.25);transition:.3s}.enter-btn:hover,.surprise-btn:hover{transform:translateY(-3px) scale(1.02)}#intro.hide{opacity:0;visibility:hidden;pointer-events:none}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 22px 70px}.hero-inner{max-width:1000px}.badge{display:inline-flex;padding:9px 15px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(15px);border-radius:999px;color:#ffd7e7;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:25px}.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(64px,13vw,150px);line-height:.78;font-weight:500;letter-spacing:-5px}.hero p{max-width:620px;margin:30px auto 0;font-size:15px}.scroll{margin-top:45px;color:#9f8d98;font-size:11px;letter-spacing:3px;text-transform:uppercase;animation:bounce 2s infinite}
-section{padding:100px 22px;position:relative}.container{width:min(1080px,100%);margin:auto}.section-label{margin-bottom:15px}.section-title{font-size:clamp(42px,7vw,72px);font-weight:500;line-height:1;margin-bottom:25px}.letter{max-width:850px;margin:auto;text-align:center}.letter-card{padding:45px clamp(24px,6vw,70px);border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));backdrop-filter:blur(20px);box-shadow:0 30px 100px rgba(0,0,0,.25)}.letter-card p{color:#e7dbe2;font-family:"Cormorant Garamond",serif;font-size:clamp(20px,3vw,27px);line-height:1.65}.signature{margin-top:28px;color:var(--pink2);font-family:"Cormorant Garamond",serif;font-size:28px}.orbit-wrap{width:240px;height:240px;margin:60px auto 0;position:relative;display:grid;place-items:center}.orbit{position:absolute;inset:0;border:1px solid rgba(255,143,187,.2);border-radius:50%;animation:spin 12s linear infinite}.orbit:before{content:"";position:absolute;width:8px;height:8px;background:var(--pink2);border-radius:50%;top:10px;left:50%;box-shadow:0 0 20px var(--pink)}.big-heart{font-size:90px;filter:drop-shadow(0 0 30px rgba(255,79,145,.55));animation:pulse 1.8s infinite}
-.memories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.memory{min-height:270px;border-radius:25px;overflow:hidden;position:relative;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,79,145,.22),rgba(166,108,255,.08)),#160c16}.memory:nth-child(2){background:linear-gradient(145deg,rgba(166,108,255,.22),rgba(255,79,145,.08)),#160c16}.memory:nth-child(3){background:linear-gradient(145deg,rgba(255,143,187,.18),rgba(80,40,110,.16)),#160c16}.memory:nth-child(4){background:linear-gradient(145deg,rgba(255,79,145,.16),rgba(255,255,255,.04)),#160c16}.memory:nth-child(5){background:linear-gradient(145deg,rgba(166,108,255,.18),rgba(255,79,145,.12)),#160c16}.memory:nth-child(6){background:linear-gradient(145deg,rgba(255,143,187,.15),rgba(166,108,255,.12)),#160c16}.memory span{position:absolute;left:20px;bottom:18px;font-family:"Cormorant Garamond",serif;font-size:25px}
-.counter{text-align:center}.counter-box{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:35px}.time-box{width:115px;padding:20px 10px;border:1px solid var(--line);background:var(--glass);border-radius:20px}.time-box strong{display:block;font-size:34px}.time-box small{color:#a999a4;text-transform:uppercase;letter-spacing:2px;font-size:9px}.final{min-height:85vh;display:flex;align-items:center;text-align:center}.final-inner{width:min(850px,100%);margin:auto}.final-title{font-size:clamp(50px,9vw,100px);line-height:.9;margin-bottom:25px}.final p{max-width:600px;margin:0 auto 35px}.footer{text-align:center;padding:30px 20px 60px;color:#786b74;font-size:11px;letter-spacing:2px}
-#surpriseModal{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(5,2,7,.94);backdrop-filter:blur(18px);opacity:0;visibility:hidden;pointer-events:none;transition:.6s}#surpriseModal.show{opacity:1;visibility:visible;pointer-events:auto}.surprise-card{position:relative;width:min(720px,100%);max-height:92vh;overflow:auto;padding:30px;border:1px solid rgba(255,255,255,.14);border-radius:32px;background:radial-gradient(circle at 50% 0%,rgba(255,79,145,.15),transparent 35%),rgba(18,9,20,.94);box-shadow:0 30px 120px rgba(0,0,0,.7);transform:translateY(35px) scale(.94);transition:.7s cubic-bezier(.2,.8,.2,1);text-align:center}#surpriseModal.show .surprise-card{transform:none}.close{position:fixed;right:20px;top:18px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.07);color:white;cursor:pointer;font-size:20px;z-index:5}.surprise-small{margin:5px 0 15px}.surprise-heading{font-size:clamp(42px,8vw,72px);line-height:.9;margin-bottom:25px}.photo-frame{width:100%;max-width:570px;margin:auto;padding:10px;border-radius:25px;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(255,79,145,.35),rgba(166,108,255,.25));box-shadow:0 0 70px rgba(255,79,145,.18)}.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:18px;background:#160b15}.photo-caption{font-family:"Cormorant Garamond",serif;font-size:25px;margin:25px auto 5px}.photo-sub{color:#aa9ba4;font-size:12px;line-height:1.7}.burst{position:fixed;pointer-events:none;z-index:250;animation:burst 1.2s ease-out forwards}.reveal{opacity:0;transform:translateY(30px);transition:1s}.reveal.visible{opacity:1;transform:none}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes gradient{0%{background-position:0%}50%{background-position:100%}100%{background-position:0%}}@keyframes bounce{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(8px);opacity:1}}@keyframes burst{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--x),var(--y)) scale(0);opacity:0}}
-@media(max-width:750px){.memories{grid-template-columns:1fr 1fr}.memory{min-height:210px}.hero h1{letter-spacing:-2px}.letter-card{padding:32px 22px}}@media(max-width:500px){section{padding:75px 17px}.memories{grid-template-columns:1fr}.memory{min-height:240px}.time-box{width:85px}.time-box strong{font-size:27px}.surprise-card{padding:25px 15px}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #f7f6f2;
+  --ink: #20201f;
+  --muted: #888780;
+  --red: #f04432;
+  --line: #e7e5de;
+  --green: #dfff9a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 50% 0%, #fff 0%, transparent 60%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+.topbar {
+  max-width: 1120px;
+  margin: auto;
+  padding: 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: -1px;
+}
+
+.logo-icon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: var(--red);
+  color: white;
+  border-radius: 10px;
+  font-size: 19px;
+  transform: rotate(-4deg);
+}
+
+.pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 9px 12px;
+  color: #77766e;
+  background: #ffffffa0;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 65px 22px 70px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'DM Mono', monospace;
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--red);
+  animation: blink 1.5s infinite;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(43px, 8vw, 76px);
+  letter-spacing: -5px;
+  line-height: .99;
+  margin: 24px 0 20px;
+  font-weight: 800;
+}
+
+h1 span {
+  color: var(--red);
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.subtitle {
+  max-width: 460px;
+  margin: auto;
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.upload-card {
+  margin-top: 42px;
+  padding: 12px;
+  border: 1px solid #e7e4dc;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 20px 60px #25251b09;
+}
+
+.dropzone {
+  min-height: 240px;
+  padding: 28px 16px;
+  border: 1.5px dashed #d8d5cc;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: .2s;
+  cursor: pointer;
+  background: #fdfcf9;
+}
+
+.dropzone:hover, .dropzone.dragging {
+  border-color: var(--red);
+  background: #fff9f7;
+}
+
+.upload-icon {
+  width: 58px;
+  height: 58px;
+  background: #fff0ed;
+  color: var(--red);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.dropzone strong {
+  font-size: 16px;
+  letter-spacing: -.3px;
+}
+
+.dropzone p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 9px 0 18px;
+}
+
+.browse {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.file-types {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #a4a197;
+  letter-spacing: 1px;
+}
+
+.selected-file {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  padding: 12px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.pdf-icon {
+  background: #ffebe7;
+  color: var(--red);
+  padding: 13px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.file-meta { flex: 1; min-width: 0; }
+.file-meta strong {
+  display: block;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.file-meta small { color: var(--muted); display: block; margin-top: 4px; }
+
+.remove-file {
+  border: 0;
+  background: transparent;
+  color: #999;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.compress-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: var(--red);
+  color: white;
+  padding: 19px 16px;
+  margin-top: 12px;
+  font-weight: 800;
+  font-size: 15px;
+  transition: .2s;
+  box-shadow: 0 5px 0 #c93325;
+}
+
+.compress-btn:hover {
+  background: #dc3929;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 0 #c93325;
+}
+
+.compress-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #c93325;
+}
+
+.compress-btn:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.trust-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  color: #85837b;
+  font-size: 11px;
+  margin-top: 22px;
+}
+
+.trust-row span::first-letter { color: #5a9b45; }
+
+.section-title {
+  text-align: center;
+  margin-top: 72px;
+  font-size: 12px;
+  font-family: 'DM Mono', monospace;
+  color: #99978e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.feature {
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 20px 16px;
+  background: #ffffff80;
+}
+
+.feature .emoji { font-size: 23px; }
+
+.feature h3 {
+  font-size: 13px;
+  margin: 14px 0 7px;
+}
+
+.feature p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 25px 20px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #96938a;
+}
+
+footer strong { color: var(--ink); }
+
+/* COMPRESSION MODAL */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #17171699;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.overlay.show {
+  display: flex;
+  animation: fadeIn .25s ease;
+}
+
+.modal {
+  width: 100%;
+  max-width: 430px;
+  max-height: 92vh;
+  overflow-y: auto;
+  background: #faf9f6;
+  border-radius: 22px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 30px 100px #0003;
+}
+
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-top h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--red);
+}
+
+.close-btn {
+  border: 0;
+  background: transparent;
+  color: #999;
+  font-size: 23px;
+  padding: 0 4px;
+}
+
+.press {
+  position: relative;
+  height: 350px;
+  max-width: 310px;
+  margin: 20px auto 12px;
+  background: #efeee9;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.press-frame {
+  position: absolute;
+  inset: 5px 13px;
+  border-left: 16px solid #34343a;
+  border-right: 16px solid #34343a;
+  border-radius: 10px;
+}
+
+.press-top {
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  top: 0;
+  height: 25px;
+  background: #29292d;
+  border-radius: 5px 5px 8px 8px;
+  z-index: 3;
+}
+
+.press-rod {
+  position: absolute;
+  width: 18px;
+  height: 90px;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #55555c;
+}
+
+.press-platen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 17px;
+  top: 72%;
+  background: var(--red);
+  border-radius: 4px;
+  z-index: 2;
+  box-shadow: 0 3px 0 #b92a1c;
+  transition: top .35s cubic-bezier(.4,0,.2,1);
+}
+
+.paper {
+  position: absolute;
+  top: 73%;
+  left: 12%;
+  width: 76%;
+  height: 135px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 10px #0001;
+  transform-origin: center top;
+  overflow: hidden;
+  transition: top .35s, height .35s, transform .35s;
+}
+
+.paper-head {
+  background: #333;
+  color: white;
+  padding: 8px 7px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.paper-green {
+  height: 4px;
+  background: #4eaa59;
+}
+
+.paper-lines { padding: 10px; }
+.paper-lines i {
+  display: block;
+  height: 3px;
+  background: #e1e1e1;
+  margin-bottom: 7px;
+  width: 90%;
+}
+.paper-lines i:nth-child(2n) { width: 60%; }
+.paper-lines i:nth-child(3n) { width: 78%; }
+
+.press-bottom {
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  bottom: 0;
+  height: 25px;
+  background: #29292d;
+  border-radius: 7px;
+  z-index: 3;
+}
+
+.press.compressing .press-platen { top: 82%; }
+.press.compressing .paper {
+  top: 83%;
+  height: 40px;
+  transform: scaleX(.94);
+}
+
+.press.squished .press-platen { top: 88%; }
+.press.squished .paper {
+  top: 89%;
+  height: 10px;
+  transform: scaleX(.7);
+}
+
+.press.squished .paper-head,
+.press.squished .paper-green,
+.press.squished .paper-lines { opacity: 0; }
+
+.filename {
+  text-align: center;
+  font-size: 11px;
+  color: #77746c;
+  overflow-wrap: anywhere;
+  margin: 10px 0 18px;
+}
+
+.status-box {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.status-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+#statusText { color: #777; }
+
+.progress-track {
+  height: 7px;
+  background: #eceae3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--red);
+  border-radius: 20px;
+  transition: width .3s;
+}
+
+.progress-caption {
+  font-size: 10px;
+  color: #a19e94;
+  margin-top: 10px;
+  font-family: 'DM Mono', monospace;
+}
+
+.result {
+  display: none;
+  text-align: center;
+  margin-top: 18px;
+  animation: fadeIn .4s;
+}
+
+.result-emoji { font-size: 35px; }
+
+.result h3 {
+  font-size: 23px;
+  letter-spacing: -1px;
+  margin: 9px 0;
+}
+
+.result p {
+  color: #77746c;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.size-result {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.size-result small {
+  display: block;
+  font-size: 10px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.size-result strong { font-size: 15px; }
+.size-result .arrow { color: var(--red); }
+
+.download-btn {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  background: var(--ink);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.again-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 9px;
+  font-size: 12px;
+}
+
+.disclaimer {
+  font-size: 10px !important;
+  color: #a09d93 !important;
+  margin-top: 12px !important;
+}
+
+.toast {
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #222;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: .25s;
+  z-index: 30;
+  text-align: center;
+  width: max-content;
+  max-width: calc(100% - 30px);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@keyframes blink {
+  50% { opacity: .25; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 520px) {
+  .topbar { padding: 17px 19px; }
+  .logo { font-size: 19px; }
+  main { padding: 50px 17px 55px; }
+  h1 { letter-spacing: -3px; }
+  .subtitle { font-size: 13px; }
+  .upload-card { margin-top: 30px; }
+  .dropzone { min-height: 220px; }
+  .features { grid-template-columns: 1fr; }
+  .feature {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 17px;
+  }
+  .feature .emoji { font-size: 25px; }
+  .feature h3 { margin: 0 0 6px; }
+  .feature p { font-size: 12px; }
+  .feature-content { flex: 1; }
+  .press { height: 310px; }
+  .modal { padding: 20px; }
+  .trust-row { gap: 12px; }
+}
+@media(prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
 </style>
 </head>
-<body class="locked">
-<canvas id="stars"></canvas><div class="noise"></div>
-<div id="intro"><div class="intro-inner"><div class="mini">A little something for you</div><div class="intro-heart">❤️</div><h1 class="intro-title">For My<br><span class="gradient-text">Favourite Person</span></h1><p class="intro-sub">I made this little corner of the internet just for you. Take a breath, tap the button, and let me show you something.</p><button class="enter-btn" onclick="enterSite()">Open Your Surprise ✨</button></div></div>
-<div class="page">
-<header class="hero"><div class="hero-inner reveal"><div class="badge">Today is all about you ✨</div><h1>Happy<br><span class="gradient-text">Birthday</span></h1><p>If I could give you one thing today, it would be the ability to see yourself through my eyes — because then you would know just how special you are to me.</p><div class="scroll">Scroll slowly ↓</div></div></header>
-<section><div class="container letter reveal"><div class="section-label">A letter for you</div><h2 class="section-title">If words could hug you...</h2><div class="letter-card"><p>Happy birthday to the person who makes ordinary days feel a little more beautiful. Thank you for every laugh, every conversation, every little moment, and every memory that I get to keep with you.<br><br>I hope this new chapter brings you the happiness you deserve, the peace you need, and countless reasons to smile. No matter how busy life gets, I hope you always remember that there is someone here who is genuinely grateful that you exist.</p><div class="signature">With love, always ❤️</div></div><div class="orbit-wrap"><div class="orbit"></div><div class="big-heart">❤️</div></div></div></section>
-<section><div class="container reveal"><div class="section-label">Little memories</div><h2 class="section-title">Things I want to remember.</h2><div class="memories"><div class="memory"><span>That first smile ✨</span></div><div class="memory"><span>Our random conversations 🌙</span></div><div class="memory"><span>The silly moments 😂</span></div><div class="memory"><span>The quiet moments 🤍</span></div><div class="memory"><span>Every little adventure 🌹</span></div><div class="memory"><span>More memories to come ♾️</span></div></div></div></section>
-<section><div class="container counter reveal"><div class="section-label">And somehow...</div><h2 class="section-title">Time keeps moving.</h2><p style="color:var(--muted);line-height:1.7;max-width:600px;margin:auto">But some moments are worth keeping forever. This counter is just a tiny reminder of how quickly life moves.</p><div class="counter-box"><div class="time-box"><strong id="days">00</strong><small>Days</small></div><div class="time-box"><strong id="hours">00</strong><small>Hours</small></div><div class="time-box"><strong id="minutes">00</strong><small>Minutes</small></div><div class="time-box"><strong id="seconds">00</strong><small>Seconds</small></div></div></div></section>
-<section class="final"><div class="final-inner reveal"><div class="section-label">Before you go...</div><h2 class="final-title">I saved<br><span class="gradient-text">one last thing.</span></h2><p>Don't click this unless you're ready for the final surprise. ❤️</p><button class="surprise-btn" onclick="openSurprise()">Open My Final Surprise 💌</button></div></section>
-<footer class="footer">MADE WITH LOVE • JUST FOR YOU ❤️</footer>
+
+<body>
+
+<header class="topbar">
+  <div class="logo">
+    <div class="logo-icon">↧</div>
+    SquishPDF<span style="color:#f04432">.</span>
+  </div>
+  <div class="pill">100% UNNECESSARY</div>
+</header>
+
+<main>
+  <div class="eyebrow"><span class="dot"></span> THE FUTURE OF PDF COMPRESSION</div>
+
+  <h1>Make your PDFs<br><span>feel smaller.</span></h1>
+
+  <p class="subtitle">
+    Our revolutionary compression technology physically
+    squeezes your documents into submission.
+    Science? Absolutely not.
+  </p>
+
+  <section class="upload-card">
+    <div class="dropzone" id="dropzone" role="button" tabindex="0"
+         aria-label="Choose a PDF file">
+      <div class="upload-icon">↥</div>
+      <strong id="uploadTitle">Drop your PDF here</strong>
+      <p id="uploadDescription">or <span class="browse">browse files</span> from your device</p>
+
+      <div class="selected-file" id="selectedFile">
+        <div class="pdf-icon">PDF</div>
+        <div class="file-meta">
+          <strong id="fileName">document.pdf</strong>
+          <small id="fileSize">0 KB</small>
+        </div>
+        <button type="button" class="remove-file" id="removeFile"
+                aria-label="Remove selected file">×</button>
+      </div>
+
+      <div class="file-types" id="fileTypes">PDF FILES · MAX 20 MB</div>
+    </div>
+
+    <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden>
+
+    <button class="compress-btn" id="compressBtn" disabled>
+      Select a PDF to get started ↗
+    </button>
+  </section>
+
+  <div class="trust-row">
+    <span>✓ No account required</span>
+    <span>✓ No server uploads</span>
+    <span>✓ Questionable science</span>
+  </div>
+
+  <div class="section-title">Our extremely fake technology</div>
+
+  <section class="features">
+    <article class="feature">
+      <div class="emoji">🏋️</div>
+      <div class="feature-content">
+        <h3>Physical compression</h3>
+        <p>We apply approximately 4,000 imaginary pounds of pressure to your PDF.</p>
+      </div>
+    </article>
+    <article class="feature">
+      <div class="emoji">🧪</div>
+      <div class="feature-content">
+        <h3>Quantum shrinking</h3>
+        <p>We ask the file nicely to take up less space. It usually ignores us.</p>
+      </div>
+    </article>
+    <article class="feature">
+      <div class="emoji">📉</div>
+      <div class="feature-content">
+        <h3>99.9% confidence</h3>
+        <p>Our confidence is much higher than our actual compression capabilities.</p>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <strong>SquishPDF.</strong> Built with 0% engineering integrity.<br>
+  Your file stays on your device. No actual compression occurs.<br>
+  <span style="font-size:10px">A parody project. Please don't use it for real compression.</span>
+</footer>
+
+<!-- Compression animation -->
+<div class="overlay" id="overlay" role="dialog"
+     aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-top">
+      <h2 id="modalTitle">Compressing...</h2>
+      <button class="close-btn" id="closeModal" aria-label="Close">×</button>
+    </div>
+
+    <div class="press" id="press">
+      <div class="press-frame">
+        <div class="press-top"></div>
+        <div class="press-rod"></div>
+        <div class="paper" id="paper">
+          <div class="paper-head">DOCUMENT / CONFIDENTIAL</div>
+          <div class="paper-green"></div>
+          <div class="paper-lines">
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <div class="press-platen"></div>
+        <div class="press-bottom"></div>
+      </div>
+    </div>
+
+    <div class="filename" id="modalFilename">your_document.pdf</div>
+
+    <div class="status-box" id="statusBox">
+      <div class="status-line">
+        <span id="statusText">Calibrating the hydraulic press...</span>
+        <strong id="percent">0%</strong>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-caption" id="progressCaption">
+        INITIALIZING EXTREMELY ADVANCED TECHNOLOGY
+      </div>
+    </div>
+
+    <div class="result" id="result">
+      <div class="result-emoji">🎉</div>
+      <h3>It's... basically the same.</h3>
+      <p>
+        After years of research, millions in funding,
+        and one very angry hydraulic press...
+      </p>
+
+      <div class="size-result">
+        <div>
+          <small>BEFORE</small>
+          <strong id="beforeSize">10 MB</strong>
+        </div>
+        <div class="arrow">→</div>
+        <div>
+          <small>AFTER</small>
+          <strong id="afterSize">9.99 MB</strong>
+        </div>
+      </div>
+
+      <p id="resultMessage">
+        We saved approximately the weight of one digital atom.
+      </p>
+
+      <button class="download-btn" id="downloadBtn">
+        ↓ Download your "compressed" PDF
+      </button>
+      <button class="again-btn" id="againBtn">Compress another PDF</button>
+
+      <p class="disclaimer">
+        Psst... it's your original file. Nothing was compressed.
+      </p>
+    </div>
+  </div>
 </div>
-<div id="surpriseModal"><button class="close" onclick="closeSurprise()">×</button><div class="surprise-card"><div class="surprise-small">One last thing...</div><h2 class="surprise-heading">This moment<br>is yours. ❤️</h2><div class="photo-frame"><img src="4F2C23F7-3279-4A3F-AB93-22EF3DF2C50A.jpeg" alt="Our special memory" onerror="this.style.display='none';document.getElementById('photoError').style.display='block';"><div id="photoError" style="display:none;padding:80px 20px;color:#b9aab4;line-height:1.8"><strong style="color:#fff">Your photo hasn't been added yet ❤️</strong><br><br>Upload your photo to the GitHub repository and name it <strong style="color:#ff8fbb">surprise.jpg</strong>.</div></div><div class="photo-caption">My favourite place is wherever you are.</div><div class="photo-sub">Happy Birthday, my love. ❤️<br>I hope this little website becomes one of the memories we keep.</div><div style="margin-top:25px;font-size:25px;letter-spacing:8px">❤️ ✨ ❤️ ✨ ❤️</div></div></div>
+
+<div class="toast" id="toast" role="status"></div>
+
 <script>
-function enterSite(){document.getElementById('intro').classList.add('hide');document.body.classList.remove('locked');window.scrollTo(0,0)}
-function openSurprise(){document.getElementById('surpriseModal').classList.add('show');document.body.classList.add('locked');createBurst()}
-function closeSurprise(){document.getElementById('surpriseModal').classList.remove('show');document.body.classList.remove('locked')}
-document.getElementById('surpriseModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeSurprise()});
-function createBurst(){const s=['❤️','💗','✨','💕','🌹','⭐'];for(let i=0;i<45;i++){let e=document.createElement('div');e.className='burst';e.textContent=s[Math.floor(Math.random()*s.length)];let a=Math.random()*Math.PI*2,d=120+Math.random()*360;e.style.left='50%';e.style.top='50%';e.style.fontSize=(8+Math.random()*13)+'px';e.style.setProperty('--x',Math.cos(a)*d+'px');e.style.setProperty('--y',Math.sin(a)*d+'px');document.body.appendChild(e);setTimeout(()=>e.remove(),1300)}}
-const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
-const startDate=new Date('2026-01-01T00:00:00');function updateCounter(){let d=Math.max(0,new Date()-startDate),days=Math.floor(d/86400000);d%=86400000;let h=Math.floor(d/3600000);d%=3600000;let m=Math.floor(d/60000);d%=60000;let s=Math.floor(d/1000);document.getElementById('days').textContent=String(days).padStart(2,'0');document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('minutes').textContent=String(m).padStart(2,'0');document.getElementById('seconds').textContent=String(s).padStart(2,'0')}updateCounter();setInterval(updateCounter,1000);
-const canvas=document.getElementById('stars'),ctx=canvas.getContext('2d');let stars=[];function resizeCanvas(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);stars=[];for(let i=0;i<Math.min(170,Math.floor(innerWidth/6));i++)stars.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.5+.2,a:Math.random()*.7+.15,speed:Math.random()*.008+.002})}function drawStars(){ctx.clearRect(0,0,innerWidth,innerHeight);stars.forEach(s=>{s.a+=s.speed;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,220,235,${.25+Math.abs(Math.sin(s.a))*.6})`;ctx.fill()});requestAnimationFrame(drawStars)}addEventListener('resize',resizeCanvas);resizeCanvas();drawStars();document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSurprise()});
+const MAX_SIZE = 20 * 1024 * 1024;
+
+const fileInput = document.getElementById('fileInput');
+const dropzone = document.getElementById('dropzone');
+const selectedFile = document.getElementById('selectedFile');
+const fileName = document.getElementById('fileName');
+const fileSize = document.getElementById('fileSize');
+const fileTypes = document.getElementById('fileTypes');
+const compressBtn = document.getElementById('compressBtn');
+const overlay = document.getElementById('overlay');
+const press = document.getElementById('press');
+const statusText = document.getElementById('statusText');
+const percent = document.getElementById('percent');
+const progressFill = document.getElementById('progressFill');
+const progressCaption = document.getElementById('progressCaption');
+const result = document.getElementById('result');
+const statusBox = document.getElementById('statusBox');
+
+let selected = null;
+let running = false;
+let completed = false;
+let timerIds = [];
+let previousFocus = null;
+
+function formatSize(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+  return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+}
+
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.classList.add('show');
+  clearTimeout(showToast.timeout);
+  showToast.timeout = setTimeout(() => toast.classList.remove('show'), 2800);
+}
+
+function stopTimers() {
+  timerIds.forEach(id => clearTimeout(id));
+  timerIds = [];
+}
+
+function later(fn, delay) {
+  const id = setTimeout(fn, delay);
+  timerIds.push(id);
+  return id;
+}
+
+function resetAnimation() {
+  stopTimers();
+  running = false;
+  completed = false;
+  press.classList.remove('compressing', 'squished');
+  result.style.display = 'none';
+  statusBox.style.display = 'block';
+  document.getElementById('modalTitle').textContent = 'Compressing...';
+  progressFill.style.width = '0%';
+  percent.textContent = '0%';
+  statusText.textContent = 'Calibrating the hydraulic press...';
+  progressCaption.textContent = 'INITIALIZING EXTREMELY ADVANCED TECHNOLOGY';
+}
+
+function useFile(file) {
+  if (!file) return;
+
+  const isPDF = file.type === 'application/pdf' ||
+                file.name.toLowerCase().endsWith('.pdf');
+
+  if (!isPDF) {
+    showToast('Bro, that is not a PDF. Nice try. 😂');
+    return;
+  }
+
+  if (file.size > MAX_SIZE) {
+    showToast('Maximum file size is 20 MB for this very serious machine.');
+    return;
+  }
+
+  if (file.size === 0) {
+    showToast('This PDF is empty. Even our machine needs something to squish.');
+    return;
+  }
+
+  selected = file;
+
+  fileName.textContent = file.name;
+  fileSize.textContent = formatSize(file.size);
+  selectedFile.style.display = 'flex';
+  document.getElementById('uploadTitle').textContent = 'Your victim has arrived.';
+  document.getElementById('uploadDescription').textContent =
+    'Ready for absolutely unnecessary compression.';
+  fileTypes.style.display = 'none';
+  compressBtn.disabled = false;
+  compressBtn.textContent = 'Squish My PDF ↗';
+
+  showToast('PDF loaded. The machine is getting excited.');
+}
+
+function clearFile(event) {
+  if (event) event.stopPropagation();
+
+  selected = null;
+  fileInput.value = '';
+  selectedFile.style.display = 'none';
+  document.getElementById('uploadTitle').textContent = 'Drop your PDF here';
+  document.getElementById('uploadDescription').innerHTML =
+    'or <span class="browse">browse files</span> from your device';
+  fileTypes.style.display = 'block';
+  compressBtn.disabled = true;
+  compressBtn.textContent = 'Select a PDF to get started ↗';
+}
+
+dropzone.addEventListener('click', event => {
+  if (event.target.closest('#removeFile')) return;
+  fileInput.click();
+});
+
+dropzone.addEventListener('keydown', event => {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    fileInput.click();
+  }
+});
+
+fileInput.addEventListener('change', () => {
+  useFile(fileInput.files[0]);
+});
+
+document.getElementById('removeFile').addEventListener('click', clearFile);
+
+['dragenter', 'dragover'].forEach(name => {
+  dropzone.addEventListener(name, event => {
+    event.preventDefault();
+    dropzone.classList.add('dragging');
+  });
+});
+
+['dragleave', 'drop'].forEach(name => {
+  dropzone.addEventListener(name, event => {
+    event.preventDefault();
+    dropzone.classList.remove('dragging');
+  });
+});
+
+dropzone.addEventListener('drop', event => {
+  useFile(event.dataTransfer.files[0]);
+});
+
+function openModal() {
+  previousFocus = document.activeElement;
+  overlay.classList.add('show');
+  document.getElementById('closeModal').focus();
+}
+
+function closeModal() {
+  stopTimers();
+  running = false;
+  overlay.classList.remove('show');
+  press.classList.remove('compressing', 'squished');
+
+  if (previousFocus && previousFocus.focus) previousFocus.focus();
+}
+
+document.getElementById('closeModal').addEventListener('click', closeModal);
+
+overlay.addEventListener('click', event => {
+  if (event.target === overlay) closeModal();
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && overlay.classList.contains('show')) {
+    closeModal();
+  }
+});
+
+compressBtn.addEventListener('click', () => {
+  if (!selected || running) return;
+
+  resetAnimation();
+  running = true;
+
+  document.getElementById('modalFilename').textContent = selected.name;
+  openModal();
+
+  const stages = [
+    [3, 'Warming up the machine...', 'PREPARING DOCUMENT FOR EXTREME VIOLENCE'],
+    [12, 'Measuring your PDF...', 'ANALYZING DIGITAL PAPER THICKNESS'],
+    [23, 'Applying pressure...', 'HYDRAULIC PRESS: ENGAGED'],
+    [37, 'Squeezing the pixels...', 'NEGOTIATING WITH INDIVIDUAL PIXELS'],
+    [49, 'Removing unnecessary air...', 'AIR DETECTED: 0 LITRES'],
+    [63, 'Compressing the margins...', 'YOUR MARGINS ARE FIGHTING BACK'],
+    [76, 'Increasing compression...', 'THIS IS DEFINITELY DOING SOMETHING'],
+    [88, 'Almost there...', 'CONSULTING OUR VERY EXPENSIVE CALCULATOR'],
+    [97, 'Final quality inspection...', 'LOOKING AT THE FILE VERY INTENSELY'],
+    [100, 'Compression complete!', 'SUCCESS RATE: EMOTIONALLY SATISFACTORY']
+  ];
+
+  const delays = [400, 850, 1400, 2050, 2800, 3500, 4200, 5000, 5750, 6500];
+
+  stages.forEach(([value, message, caption], index) => {
+    later(() => {
+      if (!running) return;
+
+      progressFill.style.width = value + '%';
+      percent.textContent = value + '%';
+      statusText.textContent = message;
+      progressCaption.textContent = caption;
+
+      if (value >= 23 && value < 63) {
+        press.classList.add('compressing');
+      }
+
+      if (value >= 76) {
+        press.classList.add('squished');
+      }
+
+      if (index === stages.length - 1) {
+        finishCompression();
+      }
+    }, delays[index]);
+  });
+});
+
+function finishCompression() {
+  running = false;
+  completed = true;
+
+  document.getElementById('modalTitle').textContent = 'Compression complete!';
+  statusText.textContent = 'Your PDF has been... emotionally compressed.';
+  progressCaption.textContent = 'PHYSICAL PAPER DAMAGE: IMAGINARY';
+
+  statusBox.style.display = 'none';
+  result.style.display = 'block';
+
+  const actualSize = selected.size;
+  document.getElementById('beforeSize').textContent = formatSize(actualSize);
+
+  // A fake number for the joke. The real file remains unchanged.
+  const fakeSaved = Math.min(10, actualSize * 0.001);
+  const pretendSize = Math.max(0, actualSize - fakeSaved);
+
+  document.getElementById('afterSize').textContent = formatSize(pretendSize);
+
+  document.getElementById('resultMessage').textContent =
+    'Our fake report claims we saved ' + formatSize(fakeSaved) +
+    '. Our real report says we did absolutely nothing.';
+
+  press.classList.add('squished');
+}
+
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  if (!selected || !completed) return;
+
+  // Intentionally downloads the ORIGINAL file unchanged.
+  const url = URL.createObjectURL(selected);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = selected.name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  showToast('Downloaded! It is the same PDF. We warned you. 😂');
+});
+
+document.getElementById('againBtn').addEventListener('click', () => {
+  closeModal();
+  clearFile();
+  fileInput.click();
+});
 </script>
-</body></html>
+
+</body>
+</html>
